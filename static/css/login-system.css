@@ -1,0 +1,146 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #123524 !important;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.dropdown-item:hover {
+  background-color: #0f2d1e !important; /* Slightly darker green for hover effect */
+  color: white !important;
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 2rem 0;
+  margin-bottom: 100px;
+}
+
+.auth-card {
+  border: none;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  background: white;
+}
+
+.form-control {
+  padding: 0.6rem 1rem;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem #123524;
+}
+
+/* Button Styles */
+.btn {
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary {
+  background-color: #123524 !important;
+  border-color: #123524 !important;
+}
+.btn-primary:hover {
+  background-color: #123524 !important; /* Slightly darker shade for hover effect */
+  border-color: #123524 !important;
+}
+
+.btn-outline-primary {
+  color: #123524 !important; /* Text color */
+  border-color: #123524 !important; /* Border color */
+}
+
+.btn-outline-primary:hover {
+  background-color: #123524 !important; /* Background color on hover */
+  color: white !important; /* Ensure text is readable */
+}
+
+.footer {
+  background-color: #123524;
+  box-shadow: 0 -2px 10px rgba(24, 26, 25, 0.1);
+  padding: 1.5rem 0;
+}
+
+.social-links a {
+  color: #3866f0;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #FFFAEC;
+  transform: scale(1.2); /* Add hover effect to enlarge icons */
+}
+
+.copyright,
+.footer a {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Ensure everything is centered on mobile */
+@media (max-width: 767px) {
+  .copyright,
+  .footer a {
+    text-align: center;
+    display: block; /* Stack items on small screens */
+  }
+
+  /* Ensure Privacy, Terms, and Contact stay together in one line */
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Adds spacing between links */
+    flex-wrap: wrap; /* Prevents overflow while keeping them together */
+  }
+
+    /* Ensure social media links stay in one line and center them */
+    .social-links {
+      display: flex;
+      flex-wrap: nowrap;  /* Ensure icons stay in one line */
+      justify-content: center; /* Center icons horizontally */
+    }
+  
+    .social-links a {
+      margin: 0 12px;  /* Space between icons */
+      font-size: 1.2rem; /* Adjust size if needed */
+    }
+  }
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    padding: 0.5rem 0;
+  }
+
+  .search-form {
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 1rem 0;
+  }
+
+  .auth-card {
+    margin: 0.5rem 0;
+  }
+}
+
